@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício10</title>
+</head>
+<body>
+    <script>
+
+var encerrar = false;
+
+while (!encerrar) 
+{
+var codigo = parseInt(prompt("Digite o codigo do operario:"));
+var horastrabalhadas = parseInt(prompt("Digite o numero de horas trabalhadas:"));
+
+var salario;
+var salarioexcedente = 0;
+
+if (horastrabalhadas > 50) 
+{
+salarioExcedente = (horastrabalhadas - 50) * 20;
+salario = 50 * 10 + salarioexcedente;
+} 
+else 
+{
+salario = horastrabalhadas * 10;
+}
+alert("salario total: R$ " + salario.toFixed(2) +
+"\nsalario excedente: R$ " + salarioexcedente.toFixed(2));
+
+var resposta = prompt("Deseja encerrar o programa? (S/N)").toUpperCase();
+if (resposta === "S") 
+ {
+encerrar = true;
+ }
+}
+
+
+
+
+    </script>
+</body>
+</html>

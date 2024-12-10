@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício9</title>
+</head>
+<body>
+    <script>
+
+var pares = 0, impares = 0, positivos = 0, negativos = 0, encerrar = false;
+
+while (!encerrar) 
+{
+var numero = parseInt(prompt("Digite um numero inteiro:"));
+
+if (numero % 2 === 0) pares++;
+else impares++;
+
+if (numero > 0) positivos++;
+else if (numero < 0) negativos++;
+
+encerrar = prompt("Deseja encerrar o programa? (S/N)");
+}
+
+alert("quantidade de numeros pares: " + pares +
+"\nquantidade de numeros impares: " + impares +
+"\nquantidade de numeros positivos: " + positivos +
+"\nquantidade de numeros negativos: " + negativos);
+
+var resposta = prompt("Deseja encerrar o programa? (S/N)");
+if (resposta === "S") 
+ {
+encerrar = true;
+ }
+
+
+
+    </script> 
+</body>
+</html>
